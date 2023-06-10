@@ -5,6 +5,9 @@ import twitter from "./twitter.png"
 import instagram from "./instagram.png"
 import navbutton from "./nav-button.png"
 import arrow from "./arrow.png"
+import watchLight from './watchLight.png'
+import clients from './clients.png'
+
 export {
     vector,
     divider,
@@ -13,4 +16,6 @@ export {
     instagram,
     navbutton,
     arrow,
+    watchLight,
+    clients,
 }

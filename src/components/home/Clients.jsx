@@ -1,8 +1,9 @@
 import React from 'react'
+import { clients } from '../assets'
 
 const Clients = () => {
   return (
-    <div>Clients</div>
+    <div><img src={clients} alt="clents" /></div>
   )
 }
 
