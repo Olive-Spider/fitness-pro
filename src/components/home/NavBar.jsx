@@ -1,6 +1,5 @@
-import { useState} from 'react'
 
-import { vector, divider, instagram, twitter, facebook, navbutton, arrow } from "../assets";
+import { vector, divider, instagram, twitter, facebook, navbutton } from "../../assets";
 
 const NavBar = () => {
   return (
