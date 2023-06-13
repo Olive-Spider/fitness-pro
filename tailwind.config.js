@@ -9,6 +9,8 @@ export default {
       top: ['64px', '64px'],
       base: ['1rem', '1.5rem'],
       '5xl': ['3rem', '1'],
+      'xs' : ['0.75rem', '1rem'],
+      'sm' : ['0.875rem', '1.25rem'],
     },
     letterSpacing: {
       tight: '-0.02em',
@@ -29,6 +31,7 @@ export default {
       'nav-gray': '#777E91',
       'orange' : '#FF592C',
       'n-black': '#353945',
+      'neutral-4': '#777E90',
     },
     extend: {
       lineHeight: {
@@ -48,6 +51,9 @@ export default {
         '02' : '192px',
         '03' : '800px',
         '04' : '124px',
+        '05' : '324px',
+        '06' : '164px',
+        '07' : '72px',
       },
       width : {
         '1' : '1440px',
@@ -56,6 +62,7 @@ export default {
         '03' : '155px',
         '04' : '141px',
         '05' : '544px',
+        '06' : '1120px',
       },
       gap: {
         '1' : '249px',
@@ -81,6 +88,12 @@ export default {
         '05' : '204px',
         '06' : '20px',
         '07' : '12px',
+        '08' : '34px',
+        '09' : '24px',
+        '14' : '80px',
+        '15' : '32px',
+        '016' : '88px',
+        '017' : '110.5px',
       }
     },
   },
