@@ -1,12 +1,17 @@
-import { About, Clients, Hero, NavBar } from '../components/home';
+import { About, Clients, Hero } from '../components/home';
 
 const LandingPage = () => {
   return (
     <div>
-      <NavBar />
-      <Hero />
-      <Clients />
-      <About />
+      <section>
+        <Hero />
+      </section>
+      <section>
+        <Clients />
+      </section>
+      <section>
+        <About />
+      </section>
     </div>
   );
 };

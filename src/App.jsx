@@ -7,19 +7,22 @@ import Download from './pages/Download';
 import Features from './pages/Features';
 import Lifestyle from './pages/Lifestyle';
 import Pricing from './pages/Pricing';
+import Layout from "./layout";
 
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path='/' element={<LandingPage />} />
-        <Route path='/class' element={<Class />} />
-        <Route path='/download' element={<Download />} />
-        <Route path='/features' element={<Features />} />
-        <Route path='/lifestyle' element={<Lifestyle />} />
-        <Route path='/pricing' element={<Pricing />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/class' element={<Class />} />
+          <Route path='/download' element={<Download />} />
+          <Route path='/features' element={<Features />} />
+          <Route path='/lifestyle' element={<Lifestyle />} />
+          <Route path='/pricing' element={<Pricing />} />
+        </Routes>
+      </Layout>
     </>
   );
 }
