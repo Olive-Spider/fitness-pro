@@ -1,5 +1,4 @@
-import React from 'react'
-import { clients } from '../assets'
+import { clients } from '../../assets'
 
 const Clients = () => {
   return (

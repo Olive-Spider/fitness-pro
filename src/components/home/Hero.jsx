@@ -1,5 +1,4 @@
-import React from 'react'
-import { watchLight } from '../assets'
+import { watchLight } from '../../assets'
 
 const Hero = () => {
   return (
