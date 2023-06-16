@@ -1,51 +1,51 @@
 //import ContentSections from './ContentSections';
-import {
-  downloadicon,
-  keyicon,
-  medalicon,
-  timericon,
-  connectline,
-} from '../../assets';
+// import {
+//   downloadicon,
+//   keyicon,
+//   medalicon,
+//   timericon,
+//   connectline,
+// } from '../../assets';
 import Content from './Content';
 
 const About = () => {
-  const contents = [
-    {
-      id: 1,
-      icon: downloadicon,
-      icon2: connectline,
-      step: 'Step 1',
-      title: 'Download',
-      description:
-        'Fitness Pro tracks your workouts, get better results, and be the best version of you.',
-    },
-    {
-      id: 2,
-      icon: keyicon,
-      icon2: connectline,
-      step: 'Step 2',
-      title: 'Choose your trainer',
-      description:
-        'Fitness Pro tracks your workouts, get better results, and be the best version of you.',
-    },
-    {
-      id: 3,
-      icon: medalicon,
-      icon2: connectline,
-      step: 'Step 3',
-      title: 'Set the goals',
-      description:
-        'Fitness Pro tracks your workouts, get better results, and be the best version of you.',
-    },
-    {
-      id: 4,
-      icon: timericon,
-      step: 'Step 4',
-      title: 'Workout time',
-      description:
-        'Fitness Pro tracks your workouts, get better results, and be the best version of you.',
-    },
-  ];
+//   const contents = [
+//     {
+//       id: 1,
+//       icon: downloadicon,
+//       icon2: connectline,
+//       step: 'Step 1',
+//       title: 'Download',
+//       description:
+//         'Fitness Pro tracks your workouts, get better results, and be the best version of you.',
+//     },
+//     {
+//       id: 2,
+//       icon: keyicon,
+//       icon2: connectline,
+//       step: 'Step 2',
+//       title: 'Choose your trainer',
+//       description:
+//         'Fitness Pro tracks your workouts, get better results, and be the best version of you.',
+//     },
+//     {
+//       id: 3,
+//       icon: medalicon,
+//       icon2: connectline,
+//       step: 'Step 3',
+//       title: 'Set the goals',
+//       description:
+//         'Fitness Pro tracks your workouts, get better results, and be the best version of you.',
+//     },
+//     {
+//       id: 4,
+//       icon: timericon,
+//       step: 'Step 4',
+//       title: 'Workout time',
+//       description:
+//         'Fitness Pro tracks your workouts, get better results, and be the best version of you.',
+//     },
+//   ];
 
 //   const modifiedContents = contents.map((content, index) => {
 //     if (index === contents.length - 1) {
@@ -66,7 +66,7 @@ const About = () => {
           in React Native.
         </h3>
       </div>
-      <div className='flex flex-row items-start'>
+      <div className='max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl flex flex-row items-start'>
         {/* Render the ContentSections component and pass the modified content data */}
 		{/* <ContentSections contents={contents}/> */}
         <Content />

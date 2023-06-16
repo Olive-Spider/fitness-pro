@@ -8,8 +8,8 @@ import {
 
 const Content = () => {
   return (
-    <div className='flex space-x-10 py-20 '>
-      <div className='flex w-full space-x-4 pb-10 overflow-x-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-primary/20'>
+    <div className='container flex space-x-10 py-20 max-w-6xl '>
+      <div className='flex w-full space-x-4 pb-10 hide-scroll-bar  overflow-x-scroll scrollbar-thin scrollbar-thumb-primary scrollbar-track-primary/20'>
         <div className='w-64 flex flex-col flex-none flex-grow-0 space-y-20'>
           {/* Render the ContentComponent and pass the content item */}
           <div className='relative flex justify-center items-center'>

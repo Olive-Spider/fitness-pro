@@ -29,7 +29,7 @@ const Hero = () => {
 	const { theme } = useTheme();
   return (
     <div className='w-full'>
-      <div className='grid grid-cols-1 space-y-6 md:grid-cols-2 space-x-10 py-2 h-full overflow-hidden'>
+      <div className='grid grid-cols-1 space-y-6 md:grid-cols-2 space-x-10 py-2 h-fit overflow-hidden'>
         <div className='flex flex-col justify-center item-center space-y-4 ss:mt-8 md:mt-0'>
           <h1 className='font-bold text-base uppercase text-gray-400 leading-4'>
             Train smarter. get stronger
@@ -42,10 +42,10 @@ const Hero = () => {
             you. Less thinking, more lifting.
           </p>
           <div className='flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row items-center justify-start w-full'>
-            <button className=' bg-primary text-white rounded-full flex-none flex-grow-0  w-full md:w-48 px-6 py-3 text-[0.9rem] font-semibold xl:text-base '>
+            <button className=' bg-primary text-white rounded-full flex-none flex-grow-0  w-full md:w-44 px-6 py-3 text-[0.9rem] font-semibold xl:text-base '>
               Download App{' '}
             </button>
-            <button className='border border-black dark:border-white dark:text-white text-black flex-none flex-grow-0  w-full md:w-48 text-[0.9rem] font-semibold rounded-full px-6 py-3 text-sm xl:text-base '>
+            <button className='border border-black dark:border-white dark:text-white text-black flex-none flex-grow-0  w-full md:w-44 text-[0.9rem] font-semibold rounded-full px-6 py-3 text-sm xl:text-base '>
               Book a class{' '}
             </button>
           </div>
