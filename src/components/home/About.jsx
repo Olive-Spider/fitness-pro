@@ -1,4 +1,4 @@
-import ContentSections from './ContentSections';
+//import ContentSections from './ContentSections';
 import {
   downloadicon,
   keyicon,
@@ -6,6 +6,7 @@ import {
   timericon,
   connectline,
 } from '../../assets';
+import Content from './Content';
 
 const About = () => {
   const contents = [
@@ -46,28 +47,29 @@ const About = () => {
     },
   ];
 
-  const modifiedContents = contents.map((content, index) => {
-    if (index === contents.length - 1) {
-      const { icon2, ...rest } = content;
-      return rest;
-    }
-    return content;
-  });
+//   const modifiedContents = contents.map((content, index) => {
+//     if (index === contents.length - 1) {
+//       const { icon2, ...rest } = content;
+//       return rest;
+//     }
+//     return content;
+//   });
 
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center py-10'>
       <div className='flex flex-col items-center gap-5'>
-        <h2 className='font-bold h-14 w-05 text-5xl leading-12 text-center tracking-tight'>
+        <h2 className='font-bold h-14 w-05 text-5xl leading-12 text-center tracking-tight dark:text-white'>
           How it works
         </h2>
-        <h3 className='font-poppins h-12 w-05 font-normal text-base text-center text-n-black flex-none order-1 flex-grow-0'>
+        <h3 className='font-poppins h-12 w-05 font-normal text-base text-center text-n-black flex-none order-1 flex-grow-0 dark:text-white'>
           Stacks is a production-ready library of stackable content blocks built
           in React Native.
         </h3>
       </div>
-      <div>
+      <div className='flex flex-row items-start'>
         {/* Render the ContentSections component and pass the modified content data */}
-        <ContentSections contents={modifiedContents} />
+		{/* <ContentSections contents={contents}/> */}
+        <Content />
         {/* Render the ContentSections component again in a different section */}
       </div>
     </div>

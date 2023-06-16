@@ -65,6 +65,9 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        darkbg: {
+          DEFAULT: 'hsl(var(--dark-background))',
+        },
       },
       lineHeight: {
         12: '56px',
@@ -74,7 +77,6 @@ export default {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif', 'Source Sans Pro'],
-        pro: ['Source Sans Pro', 'sans-serif'],
       },
       height: {
         1: '144px',
@@ -119,6 +121,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 };
 
