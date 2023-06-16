@@ -1,4 +1,5 @@
-import vector from "./Vector.svg"
+import Logo from "./Logo.svg"
+import LogoWhite from "./LogoWhite.svg"
 import divider from "./divider.jpg"
 import facebook from "./facebook.png"
 import twitter from "./twitter.png"
@@ -6,6 +7,7 @@ import instagram from "./instagram.png"
 import navbutton from "./nav-button.png"
 import arrow from "./arrow.png"
 import watchLight from './watchLight.png'
+import watchLightDark from './watchLightDark.png';
 import clients from './clients.png'
 <<<<<<< HEAD
 import downloadicon from './download-Icon.png'
@@ -44,7 +46,8 @@ import connectline from './connect line.png';
 
 
 export {
-  vector,
+  Logo,
+  LogoWhite,
   divider,
   facebook,
   twitter,
@@ -52,6 +55,7 @@ export {
   navbutton,
   arrow,
   watchLight,
+  watchLightDark,
   clients,
   logo9,
   goldline,
