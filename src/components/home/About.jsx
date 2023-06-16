@@ -66,7 +66,7 @@ const About = () => {
           in React Native.
         </h3>
       </div>
-      <div className='max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-6xl flex flex-row items-start'>
+      <div className='container max-w-xs sm:max-w-md md:max-w-lg lg:max-w-4xl xl:max-w-7xl flex flex-row items-start'>
         {/* Render the ContentSections component and pass the modified content data */}
 		{/* <ContentSections contents={contents}/> */}
         <Content />
