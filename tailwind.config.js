@@ -4,20 +4,20 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 
   theme: {
-    fontSize: {
-      top: ['64px', '64px'],
-      base: ['1rem', '1.5rem'],
-      '5xl': ['3rem', '1'],
-    },
+    // fontSize: {
+    //   top: ['64px', '64px'],
+    //   base: ['1rem', '1.5rem'],
+    //   '5xl': ['3rem', '1'],
+    // },
     letterSpacing: {
       tight: '-0.02em',
     },
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
-    },
+    // screens: {
+    //   sm: '480px',
+    //   md: '768px',
+    //   lg: '976px',
+    //   xl: '1440px',
+    // },
 
     // colors: {
     //   white: '#FCFCFD',
