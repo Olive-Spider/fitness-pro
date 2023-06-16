@@ -2,7 +2,7 @@ import { watchLight } from '../../assets'
 
 const Hero = () => {
   return (
-    <div className='w-1 h-2 bg-white flex-none flex-grow-0 order-1'>
+    <div className='w-1 h-2 flex-none flex-grow-0 order-1'>
       <div className='flex flex-col items-start gap-5 w-01 h-01 flex-none order-none flex-grow-0 ml-40'>
         <div className='mt-05'>
         <h1 className='font-poppins font-bold text-base uppercase text-nav-gray leading-4'>Train smarter. get stronger</h1>

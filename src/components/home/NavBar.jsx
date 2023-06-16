@@ -3,12 +3,47 @@ import { vector } from '../../assets';
 import { links } from '../../utils/navLink';
 import { CiFacebook } from 'react-icons/ci';
 import { RiTwitterLine, RiInstagramLine } from 'react-icons/ri';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { BsFillSunFill, BsMoonFill } from 'react-icons/bs';
+
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  // theme state
+  const [theme, setTheme] = useState('light');
+
+  // if local storage is empty save theme as light
+  useEffect(() => {
+    if (localStorage.getItem('theme') === null) {
+      localStorage.setItem('theme', 'light');
+    }
+  }, []);
+
+  useEffect(() => {
+    // select html elem
+    const html = document.querySelector('html');
+    if (localStorage.getItem('theme') === 'dark') {
+      html.classList.add('dark');
+      setTheme('dark');
+    } else {
+      html.classList.remove('dark');
+      setTheme('light');
+    }
+  }, [theme]);
+
+  // handle switch theme
+  const handleThemeSwitch = () => {
+    if (localStorage.getItem('theme') === 'light') {
+      setTheme('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
+    }
+  };
 
   const toggleMenu = () => {
     console.log('clicked');
@@ -19,7 +54,7 @@ const NavBar = () => {
   let normalLink = 'hover:opacity-50';
 
   return (
-    <header className='bg-white pt-10'>
+    <header className='dark:bg-black pt-10'>
       <div className='hidden md:flex justify-between items-center'>
         <div className='flex space-x-2'>
           <Link to='/' className='flex items-center space-x-3'>
@@ -63,11 +98,20 @@ const NavBar = () => {
               <RiInstagramLine />
             </Link>
           </ul>
-          <div>
+          <div className='flex space-x-2'>
             <button className='border border-nav-gray py-2 px-4 rounded-full'>
               Get trial
             </button>
+            <div>
+              <button
+                onClick={handleThemeSwitch}
+                className='p-4 bg-black dark:bg-white text-white rounded-full w-12 h-12 flex justify-center items-center'
+              >
+                {theme === 'light' ? <BsMoonFill /> : <BsFillSunFill className='dark:text-black'/>}
+              </button>
+            </div>
           </div>
+          {/* button */}
         </div>
       </div>
 
@@ -119,10 +163,18 @@ const NavBar = () => {
                       <RiInstagramLine />
                     </Link>
                   </ul>
-                  <div>
+                  <div className='flex flex-col space-y-2'>
                     <button className='border border-nav-gray py-2 px-4 rounded-full'>
                       Get trial
                     </button>
+                    <div>
+                      <button
+                        onClick={handleThemeSwitch}
+                        className='p-4 bg-accent text-white rounded-full w-12 h-12 flex justify-center items-center'
+                      >
+                        {theme === 'light' ? <BsMoonFill /> : <BsFillSunFill />}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </nav>
