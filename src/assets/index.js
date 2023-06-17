@@ -9,30 +9,6 @@ import arrow from "./arrow.png"
 import watchLight from './watchLight.png'
 import watchLightDark from './watchLightDark.png';
 import clients from './clients.png'
-<<<<<<< HEAD
-import downloadicon from './download-Icon.png'
-import keyicon from './key-icon.png'
-import medalicon from './medal-icon.png'
-import timericon from './timer-icon.png'
-import connectline from './connect line.png'
-
-export {
-    vector,
-    divider,
-    facebook,
-    twitter,
-    instagram,
-    navbutton,
-    arrow,
-    watchLight,
-    clients,
-    downloadicon,
-    keyicon,
-    medalicon,
-    timericon,
-    connectline,
-}
-=======
 import logo9 from './9logo.png';
 import goldline from './Goldlines.png';
 import rotashow from './Rotashow.png';
@@ -68,4 +44,3 @@ export {
   timericon,
   connectline,
 };
->>>>>>> e2d90fd (feat: complete responsiveness)
