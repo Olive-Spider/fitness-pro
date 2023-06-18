@@ -2,7 +2,7 @@ import { logo9, goldline, rotashow, travelers, waves } from '../../assets';
 
 export default function Clients() {
   return (
-    <div className=''>
+    <div className='py-20'>
       <p className='text-base text-center font-bold text-slate-900 dark:text-white'>
         Trusted by more than 2M users worldwide
       </p>

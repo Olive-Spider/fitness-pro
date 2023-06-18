@@ -10,7 +10,6 @@ import Trainers from "./Trainers";
 import Testimonials from "./Testimonials";
 import Stats from "./Stats";
 import Mobility from "./Mobility";
-import Content from "./Content";
 import CTA from "./CTA";
 import Footer from "./Footer";
 
@@ -27,7 +26,6 @@ export {
     Testimonials,
     Stats,
     Mobility,
-    Content,
     CTA,
     Footer,
 }

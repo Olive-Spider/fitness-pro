@@ -23,8 +23,11 @@ export default function NavBar() {
         <>
           <div className='pt-4'>
             <div className='flex h-16 justify-between'>
-              <div className='flex flex-none flex-grow-0 px-2 lg:px-0'>
-                <Link to='/' className='flex items-center'>
+              <div className='flex  px-2 lg:px-0'>
+                <Link
+                  to='/'
+                  className='flex items-center flex-none flex-grow-0'
+                >
                   <div>
                     {theme === 'light' ? (
                       <div className='h-12 w-12 flex items-center'>
@@ -40,7 +43,7 @@ export default function NavBar() {
                     Fitness Pro
                   </h2>
                 </Link>
-                <div className='hidden lg:ml-6 lg:flex lg:space-x-8'>
+                <div className='hidden lg:ml-4 lg:flex lg:space-x-8'>
                   <div className='flex justify-between items-center'>
                     <div>
                       <ul className='flex items-center justify-center xl:text-base lg:text-sm dark:text-white'>

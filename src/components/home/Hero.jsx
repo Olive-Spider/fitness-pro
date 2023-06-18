@@ -28,9 +28,9 @@ const Hero = () => {
 
 	const { theme } = useTheme();
   return (
-    <div className='w-full'>
+    <div className='w-full md:my-10'>
       <div className='grid grid-cols-1 space-y-6 md:grid-cols-2 space-x-10 py-2 h-fit overflow-hidden'>
-        <div className='flex flex-col justify-center item-center space-y-4 ss:mt-8 md:mt-0'>
+        <div className='flex flex-col justify-start pt-20 md:pt-36 item-center space-y-4 ss:mt-8 md:mt-0'>
           <h1 className='font-bold text-base uppercase text-gray-400 leading-4'>
             Train smarter. get stronger
           </h1>
@@ -56,13 +56,13 @@ const Hero = () => {
               <img
                 src={watchLight}
                 alt='watchlight'
-                className='object-contain w-full h-full'
+                className='object-contain w-full h-full md:scale-125'
               />
             ) : (
               <img
                 src={watchLightDark}
                 alt='watchlight'
-                className='object-contain w-full h-full'
+                className='object-contain w-full h-full md:scale-125'
               />
             )}
           </div>
