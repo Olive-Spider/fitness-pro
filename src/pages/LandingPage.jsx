@@ -1,4 +1,4 @@
-import { About, Clients, Hero } from '../components/home';
+import { About, Clients, Hero, Intro } from '../components/home';
 
 const LandingPage = () => {
   return (
@@ -11,6 +11,9 @@ const LandingPage = () => {
       </section>
       <section>
         <About />
+      </section>
+      <section>
+        <Intro />
       </section>
     </div>
   );
