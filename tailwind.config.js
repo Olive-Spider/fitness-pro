@@ -19,16 +19,12 @@ export default {
     //   xl: '1440px',
     // },
 
-    // colors: {
-    //   white: '#FCFCFD',
-    //   gray: '#F4F5F6',
-    //   black: '#141416',
-    //   logo: '#23262F',
-    //   'light-gray': '#E6E8EC',
-    //   'nav-gray': '#777E91',
-    //   orange: '#FF592C',
-    //   'n-black': '#353945',
-    // },
+    colors: {
+      neutral3: '#23262F',
+      neutral4: '#777E90',
+      neutral8: '#FCFCFD',
+    },
+
     extend: {
       colors: {
         border: 'hsl(var(--border))',
@@ -76,7 +72,8 @@ export default {
         '01': '136px',
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif', 'Source Sans Pro'],
+        poppins: ["Poppins", "sans-serif", "Source Sans Pro"],
+        pro:["Source Sans Pro", "sans-serif"],
       },
       height: {
         1: '144px',
