@@ -19,7 +19,8 @@ import keyicon from './key-icon.png';
 import medalicon from './medal-icon.png';
 import timericon from './timer-icon.png';
 import connectline from './connect line.png';
-import intro from './intro.png'
+import intro from './intro.png';
+import booking from './booking.png'
 
 
 export {
@@ -45,4 +46,5 @@ export {
   timericon,
   connectline,
   intro,
+  booking,
 };

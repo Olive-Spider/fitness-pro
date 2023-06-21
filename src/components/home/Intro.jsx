@@ -11,7 +11,7 @@ const Intro = () => {
         <br />
         <h3 className="flex flex-col items-stretch text-2xl font-poppins leading-8 tracking-[-0.015rem] text-neutral4">Fitness Pro helps track your workouts, get better results, and be the best version of you. Less thinking, more lifting 🔥🏀</h3>
         <br />
-        <button className="text-neutral8 flex px-6 py-4 justify-center items-center gap-3 rounded-[5.625rem] bg-primary">Start free trial</button>
+        <button className="text-neutral8 flex px-6 py-4 justify-center items-center gap-3 rounded-[5.625rem] bg-primary text-base font-bold">Start free trial</button>
       </div>
     </div>
   )

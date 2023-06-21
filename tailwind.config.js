@@ -20,12 +20,16 @@ export default {
     // },
 
     colors: {
+      neutral2: '#23262F',
       neutral3: '#23262F',
       neutral4: '#777E90',
       neutral8: '#FCFCFD',
     },
 
     extend: {
+      boxShadow: {
+        '1': '0px 64px 64px -48px rgba(15, 15, 15, 0.10)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
