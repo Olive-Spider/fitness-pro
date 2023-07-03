@@ -6,8 +6,8 @@ import Class from "./pages/Class";
 import Download from './pages/Download';
 import Features from './pages/Features';
 import Lifestyle from './pages/Lifestyle';
-import Pricing from './pages/Pricing';
 import Layout from "./layout";
+import PricingPage from "./pages/PricingPage";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path='/download' element={<Download />} />
           <Route path='/features' element={<Features />} />
           <Route path='/lifestyle' element={<Lifestyle />} />
-          <Route path='/pricing' element={<Pricing />} />
+          <Route path='/pricing' element={<PricingPage />} />
         </Routes>
       </Layout>
     </>
