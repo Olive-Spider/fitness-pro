@@ -1,9 +1,11 @@
-import Plan from "../components/pricing/Plan";
+import { Plan, PricingTable } from "../components/pricing";
+
 
 const PricingPage = () => {
   return (
-    <div>
+    <div >
       <Plan />
+      <PricingTable />
     </div>
   );
 };
